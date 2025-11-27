@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "5308baf4-69bc-48e7-bd89-b3260ff7bc37",
+		"name": "FX Deals API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50283193",
+		"_collection_link": "https://essaoudmedamine-9038517.postman.co/workspace/Amine's-Workspace~6994b0f6-aa3f-4bd9-8dd1-c557ec46f00d/collection/50283193-5308baf4-69bc-48e7-bd89-b3260ff7bc37?action=share&source=collection_link&creator=50283193"
+	},
+	"item": [
+		{
+			"name": "import-deals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    { \"dealId\": \"D001\", \"amount\": 1000, \"fromCurrency\": \"USD\", \"toCurrency\": \"EUR\", \"timestamp\": \"2025-11-25T14:00:00\" },\r\n    { \"dealId\": \"D002\", \"amount\": 500, \"fromCurrency\": \"EUR\", \"toCurrency\": \"JPY\", \"timestamp\": \"2025-11-25T14:05:00\" },\r\n    { \"dealId\": \"D003\", \"amount\": 750, \"fromCurrency\": \"GBP\", \"toCurrency\": \"USD\", \"timestamp\": \"2025-11-25T14:10:00\" },\r\n    { \"dealId\": \"D004\", \"amount\": null, \"fromCurrency\": \"USD\", \"toCurrency\": \"EUR\", \"timestamp\": \"2025-11-25T14:15:00\" },\r\n    { \"dealId\": \"D005\", \"amount\": 1200, \"fromCurrency\": \"JPY\", \"toCurrency\": \"USD\", \"timestamp\": \"2025-11-25T14:20:00\" },\r\n    { \"dealId\": \"D006\", \"amount\": null, \"fromCurrency\": \"EUR\", \"toCurrency\": \"GBP\", \"timestamp\": \"2025-11-25T14:25:00\" },\r\n    { \"dealId\": \"D007\", \"amount\": 300, \"fromCurrency\": \"USD\", \"toCurrency\": \"JPY\", \"timestamp\": \"2025-11-25T14:30:00\" },\r\n    { \"dealId\": \"D008\", \"amount\": 450, \"fromCurrency\": \"GBP\", \"toCurrency\": \"EUR\", \"timestamp\": \"2025-11-25T14:35:00\" },\r\n    { \"dealId\": \"D009\", \"amount\": 800, \"fromCurrency\": \"USD\", \"toCurrency\": \"EUR\", \"timestamp\": \"2025-11-25T14:40:00\" },\r\n    { \"dealId\": \"D010\", \"amount\": 600, \"fromCurrency\": \"EUR\", \"toCurrency\": \"USD\", \"timestamp\": \"2025-11-25T14:45:00\" },\r\n    { \"dealId\": \"D011\", \"amount\": 1000, \"fromCurrency\": \"USD\", \"toCurrency\": \"EUR\", \"timestamp\": \"2025-11-25T14:00:00\" },\r\n    { \"dealId\": \"D012\", \"amount\": 700, \"fromCurrency\": null, \"toCurrency\": \"EUR\", \"timestamp\": \"2025-11-25T14:55:00\" },\r\n    { \"dealId\": \"D013\", \"amount\": 400, \"fromCurrency\": \"EUR\", \"toCurrency\": \"JPY\", \"timestamp\": null },\r\n    { \"dealId\": \"D014\", \"amount\": 100, \"fromCurrency\": \"USD\", \"toCurrency\": \"EUR\", \"timestamp\": \"2025-11-25T15:05:00\" },\r\n    { \"dealId\": \"D015\", \"amount\": 900, \"fromCurrency\": \"USD\", \"toCurrency\": \"GBP\", \"timestamp\": \"2025-11-25T15:10:00\" }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8086/api/deals/import?Content-Type=application/json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8086",
+					"path": [
+						"api",
+						"deals",
+						"import"
+					],
+					"query": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
