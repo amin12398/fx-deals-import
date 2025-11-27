@@ -61,22 +61,7 @@ docker-compose up --build
 API endpoint : POST /api/deals/import
 
 
-# 6. Testing
 
-## Unit Tests
-
-- **DealControllerTest**: tests API endpoints  
-- **DealCsvReaderTest**: tests CSV import and validation logic  
-- **DealServiceTest**: tests service methods  
-
-## Integration Tests
-
-- **DealServiceIntegrationTest**: tests service and repository together  
-
-## Test Coverage
-
-- **JaCoCo report**: `target/site/jacoco/index.html`  
-  Shows coverage for all tests in the project
 
 
 
