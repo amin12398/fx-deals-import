@@ -55,24 +55,6 @@ Deals are checked for:
 
 ### Build the project 
 ```bash
-mvn clean install
+mvn clean install   
 mvn spring-boot:run
-docker-compose up --build
-API endpoint : POST /api/deals/import
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+docker-compose up --build 
